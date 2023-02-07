@@ -6,6 +6,7 @@
   
     "rules": {
       "close-order": "error",
+      "input-missing-label": "warn",
       "require-sri": "warn"
     }
   }
