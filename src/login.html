@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Index - Docs Bootstrap Template</title>
+      <link href="./static/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+      <!-- Metadata -->
+      <meta name="description" content="Docs Bootstrap Template Demo">
+      <meta name="keywords" content="Bootstrap, template, documentation">
+      <meta name="author" content="Bernardo Martínez Garrido">
+
+      <!-- Linking Metadata -->
+      <link rel="canonical" href="http://docs.bernardomg.com/component-bootstrap-template/">
+
+      <!-- Facebook OpenGraph -->
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="./static/favicon.ico">
+      <meta property="og:url" content="http://docs.bernardomg.com/component-bootstrap-template/">
+      <meta property="og:site_name" content="Docs Bootstrap Template">
+      <meta property="og:title" content="Index - Docs Bootstrap Template">
+      <meta property="og:description"
+         content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites">
+
+      <!-- Twitter Card -->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:creator" content="@BernardoMartG">
+      <meta name="twitter:title" content="Docs Bootstrap Template Demo">
+      <meta name="twitter:description"
+         content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites">
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="./static/lib/bootswatch/litera/bootstrap.min.css">
+      <link rel="stylesheet" href="./static/lib/font-awesome/fontawesome-free/css/all.min.css">
+      <link rel="stylesheet" href="./static/lib/highlight/styles/default.css">
+      <!-- Docs Template style -->
+      <link rel="stylesheet" href="static/css/style.css">
+
+   </head>
+
+   <body class="d-flex flex-column">
+      <header>
+         <nav id="navbar-main" class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="./index.html">Bootstrap Components Template</a>
+               <small class="navbar-text d-none d-md-block"><span id="navbar-version">v1.0.0</span> (<time
+                     id="navbar-date">2023-02-02</time>)</small>
+               <div class="col-sm d-none d-md-block">
+                  <a href="https://github.com/Bernardo-MG/component-bootstrap-template" title="GitHub" aria-label="GitHub"><span
+                        class="fab fa-github ps-1" aria-hidden="true"></span><span class="d-none d-sm-block d-md-none">
+                        Github</span></a>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <section id="main-section" class="container flex-grow-1 mb-2">
+            <h1>Login Form</h1>
+            <section id="login-default" class="mt-5">
+               <h2>Default</h2>
+               <div class="col-md-4 offset-md-4">
+                  <div class="card">
+                     <div class="card-body">
+                        <form class="needs-validation" novalidate>
+                           <div class="text-center">
+                              <div class="mb-2">
+                                 <input placeholder="Username" value="admin" type="text" id="usernameInput"
+                                    class="form-control">
+                              </div>
+                              <div class="mb-2">
+                                 <input placeholder="Password" value="1234" type="password" id="passwordInput"
+                                    class="form-control">
+                              </div>
+                              <!-- Remember me check -->
+                              <div class="row mb-2">
+                                 <div class="d-flex justify-content-center">
+                                    <div class="form-check mb-3 mb-md-0">
+                                       <input id="rememberMe" type="checkbox" class="form-check-input">
+                                       <label for="rememberMe" class="form-check-label">Remember me</label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- Login button -->
+                              <div class="d-grid gap-2">
+                                 <button type="submit" class="btn btn-primary" aria-label="Login">Login</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="login-sending" class="mt-5">
+               <h2>Sending</h2>
+               <div class="col-md-4 offset-md-4">
+                  <div class="card">
+                     <div class="card-body">
+                        <form class="needs-validation" novalidate>
+                           <div class="text-center">
+                              <div class="mb-2">
+                                 <input placeholder="Username" value="admin" type="text" id="usernameInput2"
+                                    class="form-control" disabled>
+                              </div>
+                              <div class="mb-2">
+                                 <input placeholder="Password" value="1234" type="password" id="passwordInput2"
+                                    class="form-control" disabled>
+                              </div>
+                              <!-- Remember me check -->
+                              <div class="row mb-2">
+                                 <div class="d-flex justify-content-center">
+                                    <div class="form-check mb-3 mb-md-0">
+                                       <input id="rememberMe2" type="checkbox" class="form-check-input" disabled>
+                                       <label for="rememberMe2" class="form-check-label">Remember me</label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- Login button -->
+                              <div class="d-grid gap-2">
+                                 <button type="submit" class="btn btn-primary" aria-label="Login" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status">
+                                       <span class="visually-hidden">Loading...</span>
+                                    </span> Login
+                                 </button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="login-failure" class="mt-5">
+               <h2>Failure</h2>
+               <div class="col-md-4 offset-md-4">
+                  <div class="card">
+                     <div class="card-body">
+                        <form class="needs-validation" novalidate>
+                           <div class="text-center">
+                              <div class="mb-2">
+                                 <input placeholder="Username" value="admin" type="text" id="usernameInput3"
+                                    class="form-control">
+                              </div>
+                              <div class="mb-2">
+                                 <input placeholder="Password" value="1234" type="password" id="passwordInput3"
+                                    class="form-control is-invalid">
+                                 <div class="invalid-feedback">
+                                    Invalid password
+                                 </div>
+                              </div>
+                              <!-- Remember me check -->
+                              <div class="row mb-2">
+                                 <div class="d-flex justify-content-center">
+                                    <div class="form-check mb-3 mb-md-0">
+                                       <input id="rememberMe3" type="checkbox" class="form-check-input">
+                                       <label for="rememberMe3" class="form-check-label">Remember me</label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- Login button -->
+                              <div class="d-grid gap-2">
+                                 <button type="submit" class="btn btn-primary" aria-label="Login" disabled>Login</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </section>
+      </main>
+      <footer class="footer w-100 pt-2 border-top bg-light">
+         <div id="footer-nav" class="bg-light container">
+            <div id="navbar-footer" class="row">
+               <div class="col">
+                  <dl class="text-center mb-1">
+                     <dt class="border-bottom">Code</dt>
+                     <dd><a id="scm-link" href="https://github.com/Bernardo-MG/component-bootstrap-template"
+                           class="link-noted">SCM <span class="note">GitHub</span></a>
+                     </dd>
+                     <dd><a id="ci-link" href="https://github.com/Bernardo-MG/component-bootstrap-template/actions"
+                           class="link-noted">CI <span class="note">Github Workflow</span></a>
+                     </dd>
+                     <dd><a id="issues-link" href="https://github.com/Bernardo-MG/component-bootstrap-template/issues"
+                           class="link-noted">Issues <span class="note">GitHub</span></a>
+                     </dd>
+                  </dl>
+               </div>
+            </div>
+         </div>
+         <div id="footer-info" class="bg-light ps-2 pb-1 w-100">
+            <div><span class="far fa-copyright"></span>2015-2022 <a id="author-link"
+                  href="https://github.com/Bernardo-MG">Bernardo
+                  Martínez Garrido</a> - <a id="license-link" href="http://www.opensource.org/licenses/mit-license.php">MIT
+                  License</a>
+            </div>
+            <div>Powered by <a href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a> and <a
+                  href="http://getbootstrap.com/">Bootstrap</a></div>
+         </div>
+      </footer>
+      <script src="./static/lib/popperjs/popper.min.js"></script>
+      <script src="./static/lib/bootstrap/js/bootstrap.min.js"></script>
+   </body>
+
+</html>
