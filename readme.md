@@ -1,4 +1,4 @@
-# Components Bootstrap Template
+# Bootstrap Components Template
 
 Static component templates based on [Bootstrap 5][bootstrap] and [HTML5][html5]. Used as a reference skeleton for components on frontend applications.
 
