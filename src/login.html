@@ -42,105 +42,160 @@
    </head>
 
    <body class="d-flex flex-column">
+      <header>
+         <nav id="navbar-main" class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="./index.html">Bootstrap Components Template</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main-menu"
+                  aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <small class="navbar-text d-none d-md-block"><span id="navbar-version">v1.0.0</span> (<time
+                     id="navbar-date">2023-02-02</time>)</small>
+               <div class="col-sm d-none d-md-block">
+                  <a href="https://github.com/Bernardo-MG/component-bootstrap-template" title="GitHub"
+                     aria-label="GitHub"><span class="fab fa-github ps-1" aria-hidden="true"></span><span
+                        class="d-none d-sm-block d-md-none">
+                        Github</span></a>
+               </div>
+            </div>
+         </nav>
+      </header>
       <main>
-         <section id="main-section" class="container flex-grow-1">
-            <h1>Default</h1>
-            <div class="card">
-               <div class="card-body">
-                  <form class="needs-validation" novalidate>
-                     <div class="text-center">
-                        <div class="mb-2">
-                           <input placeholder="Username" type="text" id="usernameInput" class="form-control" />
-                        </div>
-                        <div class="mb-2">
-                           <input placeholder="Password" type="password" id="passwordInput" class="form-control" />
-                        </div>
-                        <!-- Remember me check -->
-                        <div class="row mb-2">
-                           <div class="d-flex justify-content-center">
-                              <div class="form-check mb-3 mb-md-0">
-                                 <input id="rememberMe" type="checkbox" class="form-check-input">
-                                 <label for="rememberMe" class="form-check-label">Remember me</label>
+         <section id="main-section" class="container flex-grow-1 mb-2">
+            <h1>Login Form</h1>
+            <section id="login-default" class="mt-5">
+               <h2>Default</h2>
+               <div class="card">
+                  <div class="card-body">
+                     <form class="needs-validation" novalidate>
+                        <div class="text-center">
+                           <div class="mb-2">
+                              <input placeholder="Username" type="text" id="usernameInput" class="form-control" />
+                           </div>
+                           <div class="mb-2">
+                              <input placeholder="Password" type="password" id="passwordInput" class="form-control" />
+                           </div>
+                           <!-- Remember me check -->
+                           <div class="row mb-2">
+                              <div class="d-flex justify-content-center">
+                                 <div class="form-check mb-3 mb-md-0">
+                                    <input id="rememberMe" type="checkbox" class="form-check-input">
+                                    <label for="rememberMe" class="form-check-label">Remember me</label>
+                                 </div>
                               </div>
                            </div>
+                           <!-- Login button -->
+                           <div class="d-grid gap-2">
+                              <button class="btn btn-primary" aria-label="Login">Login</button>
+                           </div>
                         </div>
-                        <!-- Login button -->
-                        <div class="d-grid gap-2">
-                           <button class="btn btn-primary" aria-label="Login">Login</button>
-                        </div>
-                     </div>
-                  </form>
+                     </form>
+                  </div>
                </div>
-            </div>
-            <h1>Sending</h1>
-            <div class="card">
-               <div class="card-body">
-                  <form class="needs-validation" novalidate>
-                     <div class="text-center">
-                        <div class="mb-2">
-                           <input placeholder="Username" value="admin" type="text" id="usernameInput" class="form-control"
-                              disabled="true" />
-                        </div>
-                        <div class="mb-2">
-                           <input placeholder="Password" value="1234" type="password" id="passwordInput"
-                              class="form-control" disabled="true" />
-                        </div>
-                        <!-- Remember me check -->
-                        <div class="row mb-2">
-                           <div class="d-flex justify-content-center">
-                              <div class="form-check mb-3 mb-md-0">
-                                 <input id="rememberMe" type="checkbox" class="form-check-input" disabled="true">
-                                 <label for="rememberMe" class="form-check-label">Remember me</label>
+            </section>
+            <section id="login-sending" class="mt-5">
+               <h2>Sending</h2>
+               <div class="card">
+                  <div class="card-body">
+                     <form class="needs-validation" novalidate>
+                        <div class="text-center">
+                           <div class="mb-2">
+                              <input placeholder="Username" value="admin" type="text" id="usernameInput"
+                                 class="form-control" disabled="true" />
+                           </div>
+                           <div class="mb-2">
+                              <input placeholder="Password" value="1234" type="password" id="passwordInput"
+                                 class="form-control" disabled="true" />
+                           </div>
+                           <!-- Remember me check -->
+                           <div class="row mb-2">
+                              <div class="d-flex justify-content-center">
+                                 <div class="form-check mb-3 mb-md-0">
+                                    <input id="rememberMe" type="checkbox" class="form-check-input" disabled="true">
+                                    <label for="rememberMe" class="form-check-label">Remember me</label>
+                                 </div>
                               </div>
                            </div>
-                        </div>
-                        <!-- Login button -->
-                        <div class="d-grid gap-2">
-                           <button class="btn btn-primary" aria-label="Login" disabled="true">
-                              <div class="spinner-border" role="status">
-                                 <span class="visually-hidden">Loading...</span>
-                              </div> Login
-                           </button>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-            <h1>Failure</h1>
-            <div class="card">
-               <div class="card-body">
-                  <form class="needs-validation" novalidate>
-                     <div class="text-center">
-                        <div class="mb-2">
-                           <input placeholder="Username" value="admin" type="text" id="usernameInput"
-                              class="form-control" />
-                        </div>
-                        <div class="mb-2">
-                           <input placeholder="Password" value="1234" type="password" id="passwordInput"
-                              class="form-control is-invalid" />
-                           <div class="invalid-feedback">
-                              Invalid password
+                           <!-- Login button -->
+                           <div class="d-grid gap-2">
+                              <button class="btn btn-primary" aria-label="Login" disabled="true">
+                                 <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                 </div> Login
+                              </button>
                            </div>
                         </div>
-                        <!-- Remember me check -->
-                        <div class="row mb-2">
-                           <div class="d-flex justify-content-center">
-                              <div class="form-check mb-3 mb-md-0">
-                                 <input id="rememberMe" type="checkbox" class="form-check-input">
-                                 <label for="rememberMe" class="form-check-label">Remember me</label>
+                     </form>
+                  </div>
+               </div>
+            </section>
+            <section id="login-failure" class="mt-5">
+               <h2>Failure</h2>
+               <div class="card">
+                  <div class="card-body">
+                     <form class="needs-validation" novalidate>
+                        <div class="text-center">
+                           <div class="mb-2">
+                              <input placeholder="Username" value="admin" type="text" id="usernameInput"
+                                 class="form-control" />
+                           </div>
+                           <div class="mb-2">
+                              <input placeholder="Password" value="1234" type="password" id="passwordInput"
+                                 class="form-control is-invalid" />
+                              <div class="invalid-feedback">
+                                 Invalid password
                               </div>
                            </div>
+                           <!-- Remember me check -->
+                           <div class="row mb-2">
+                              <div class="d-flex justify-content-center">
+                                 <div class="form-check mb-3 mb-md-0">
+                                    <input id="rememberMe" type="checkbox" class="form-check-input">
+                                    <label for="rememberMe" class="form-check-label">Remember me</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Login button -->
+                           <div class="d-grid gap-2">
+                              <button class="btn btn-primary" aria-label="Login" disabled="true">Login</button>
+                           </div>
                         </div>
-                        <!-- Login button -->
-                        <div class="d-grid gap-2">
-                           <button class="btn btn-primary" aria-label="Login" disabled="true">Login</button>
-                        </div>
-                     </div>
-                  </form>
+                     </form>
+                  </div>
                </div>
-            </div>
+            </section>
          </section>
       </main>
+      <footer class="footer w-100 pt-2 border-top bg-light">
+         <div id="footer-nav" class="bg-light container">
+            <div id="navbar-footer" class="row">
+               <div class="col">
+                  <dl class="text-center mb-1">
+                     <dt class="border-bottom">Code</dt>
+                     <dd><a id="scm-link" href="https://github.com/Bernardo-MG/component-bootstrap-template"
+                           class="link-noted">SCM <span class="note">GitHub</span></a>
+                     </dd>
+                     <dd><a id="ci-link" href="https://github.com/Bernardo-MG/component-bootstrap-template/actions"
+                           class="link-noted">CI <span class="note">Github Workflow</span></a>
+                     </dd>
+                     <dd><a id="issues-link" href="https://github.com/Bernardo-MG/component-bootstrap-template/issues"
+                           class="link-noted">Issues <span class="note">GitHub</span></a>
+                     </dd>
+                  </dl>
+               </div>
+            </div>
+         </div>
+         <div id="footer-info" class="bg-light ps-2 pb-1 w-100">
+            <div><span class="far fa-copyright"></span>2015-2022 <a id="author-link"
+                  href="https://github.com/Bernardo-MG">Bernardo
+                  Martínez Garrido</a> - <a id="license-link" href="http://www.opensource.org/licenses/mit-license.php">MIT
+                  License</a>
+            </div>
+            <div>Powered by <a href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a> and <a
+                  href="http://getbootstrap.com/">Bootstrap</a></div>
+         </div>
+      </footer>
       <script src="./static/lib/popperjs/popper.min.js"></script>
       <script src="./static/lib/bootstrap/js/bootstrap.min.js"></script>
    </body>
