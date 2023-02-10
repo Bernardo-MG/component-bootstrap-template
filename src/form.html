@@ -22,15 +22,13 @@
       <meta property="og:url" content="http://docs.bernardomg.com/component-bootstrap-template/">
       <meta property="og:site_name" content="Bootstrap Components Template">
       <meta property="og:title" content="Index - Bootstrap Components Template">
-      <meta property="og:description"
-         content="Check the Bootstrap Components Template">
+      <meta property="og:description" content="Check the Bootstrap Components Template">
 
       <!-- Twitter Card -->
       <meta name="twitter:card" content="summary">
       <meta name="twitter:creator" content="@BernardoMartG">
       <meta name="twitter:title" content="Bootstrap Components Template Demo">
-      <meta name="twitter:description"
-         content="Check the Bootstrap Components Template">
+      <meta name="twitter:description" content="Check the Bootstrap Components Template">
 
       <!-- CSS -->
       <link rel="stylesheet" href="./static/lib/bootswatch/litera/bootstrap.min.css">
@@ -49,8 +47,9 @@
                <small class="navbar-text d-none d-md-block"><span id="navbar-version">v1.0.0</span> (<time
                      id="navbar-date">2023-02-02</time>)</small>
                <div class="col-sm d-none d-md-block">
-                  <a href="https://github.com/Bernardo-MG/component-bootstrap-template" title="GitHub" aria-label="GitHub"><span
-                        class="fab fa-github ps-1" aria-hidden="true"></span><span class="d-none d-sm-block d-md-none">
+                  <a href="https://github.com/Bernardo-MG/component-bootstrap-template" title="GitHub"
+                     aria-label="GitHub"><span class="fab fa-github ps-1" aria-hidden="true"></span><span
+                        class="d-none d-sm-block d-md-none">
                         Github</span></a>
                </div>
             </div>
@@ -58,73 +57,71 @@
       </header>
       <main>
          <section id="main-section" class="container flex-grow-1 mb-2">
-            <h1>Login Form</h1>
+            <h1>Form</h1>
             <section id="login-default" class="mt-5">
                <h2>Default</h2>
-               <div class="col-md-4 offset-md-4">
+               <div class="col-md-6 offset-md-3">
                   <div class="card">
                      <div class="card-body">
                         <form class="needs-validation" novalidate>
-                           <div class="text-center">
-                              <div class="mb-2">
-                                 <input placeholder="Username" value="admin" type="text" id="usernameInput"
-                                    class="form-control">
+                           <div class="mb-3 row">
+                              <label for="nameInput" class="col-sm-2 col-form-label">Name</label>
+                              <div class="col-sm-10">
+                                 <input type="text" id="nameInput" class="form-control">
                               </div>
-                              <div class="mb-2">
-                                 <input placeholder="Password" value="1234" type="password" id="passwordInput"
-                                    class="form-control">
+                           </div>
+                           <div class="mb-3 row">
+                              <label for="surnameInput" class="col-sm-2 col-form-label">Surname</label>
+                              <div class="col-sm-10">
+                                 <input type="text" id="surnameInput" class="form-control">
                               </div>
-                              <!-- Remember me check -->
-                              <div class="row mb-2">
-                                 <div class="d-flex justify-content-center">
-                                    <div class="form-check mb-3 mb-md-0">
-                                       <input id="rememberMe" type="checkbox" class="form-check-input">
-                                       <label for="rememberMe" class="form-check-label">Remember me</label>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!-- Login button -->
-                              <div class="d-grid gap-2">
-                                 <button type="submit" class="btn btn-primary" aria-label="Login">Login</button>
-                              </div>
+                           </div>
+                           <div class="mb-3 offset-md-2">
+                              <input class="form-check-input" type="checkbox" value="" id="activeCheck">
+                              <label for="activeCheck" class="form-check-label">
+                                 Active
+                              </label>
+                           </div>
+                           <!-- Save button -->
+                           <div class="d-grid gap-2">
+                              <button type="submit" class="btn btn-primary" aria-label="Login">Save</button>
                            </div>
                         </form>
                      </div>
                   </div>
                </div>
             </section>
-            <section id="login-sending" class="mt-5">
-               <h2>Sending</h2>
-               <div class="col-md-4 offset-md-4">
+            <section id="login-saving" class="mt-5">
+               <h2>Saving</h2>
+               <div class="col-md-6 offset-md-3">
                   <div class="card">
                      <div class="card-body">
                         <form class="needs-validation" novalidate>
-                           <div class="text-center">
-                              <div class="mb-2">
-                                 <input placeholder="Username" value="admin" type="text" id="usernameInput2"
-                                    class="form-control" disabled>
+                           <div class="mb-3 row">
+                              <label for="nameInput" class="col-sm-2 col-form-label">Name</label>
+                              <div class="col-sm-10">
+                                 <input type="text" id="nameInput" class="form-control" value="John" disabled>
                               </div>
-                              <div class="mb-2">
-                                 <input placeholder="Password" value="1234" type="password" id="passwordInput2"
-                                    class="form-control" disabled>
+                           </div>
+                           <div class="mb-3 row">
+                              <label for="surnameInput" class="col-sm-2 col-form-label">Surname</label>
+                              <div class="col-sm-10">
+                                 <input type="text" id="surnameInput" class="form-control" value="Smith" disabled>
                               </div>
-                              <!-- Remember me check -->
-                              <div class="row mb-2">
-                                 <div class="d-flex justify-content-center">
-                                    <div class="form-check mb-3 mb-md-0">
-                                       <input id="rememberMe2" type="checkbox" class="form-check-input" disabled>
-                                       <label for="rememberMe2" class="form-check-label">Remember me</label>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!-- Login button -->
-                              <div class="d-grid gap-2">
-                                 <button type="submit" class="btn btn-primary" aria-label="Login" disabled>
-                                    <span class="spinner-border spinner-border-sm" role="status">
-                                       <span class="visually-hidden">Sending...</span>
-                                    </span>
-                                 </button>
-                              </div>
+                           </div>
+                           <div class="mb-3 offset-md-2">
+                              <input class="form-check-input" type="checkbox" value="" id="activeCheck" disabled>
+                              <label for="activeCheck" class="form-check-label">
+                                 Active
+                              </label>
+                           </div>
+                           <!-- Save button -->
+                           <div class="d-grid gap-2">
+                              <button type="submit" class="btn btn-primary" aria-label="Login" disabled>
+                                 <span class="spinner-border spinner-border-sm" role="status">
+                                    <span class="visually-hidden">Saving...</span>
+                                 </span>
+                              </button>
                            </div>
                         </form>
                      </div>
@@ -133,35 +130,34 @@
             </section>
             <section id="login-failure" class="mt-5">
                <h2>Failure</h2>
-               <div class="col-md-4 offset-md-4">
+               <div class="col-md-6 offset-md-3">
                   <div class="card">
                      <div class="card-body">
                         <form class="needs-validation" novalidate>
-                           <div class="text-center">
-                              <div class="mb-2">
-                                 <input placeholder="Username" value="admin" type="text" id="usernameInput3"
-                                    class="form-control">
-                              </div>
-                              <div class="mb-2">
-                                 <input placeholder="Password" value="1234" type="password" id="passwordInput3"
-                                    class="form-control is-invalid">
+                           <div class="mb-3 row">
+                              <label for="nameInput" class="col-sm-2 col-form-label">Name</label>
+                              <div class="col-sm-10">
+                                 <input type="text" id="nameInput" class="form-control is-invalid" value="1234">
                                  <div class="invalid-feedback">
-                                    Invalid password
+                                    Invalid name
                                  </div>
                               </div>
-                              <!-- Remember me check -->
-                              <div class="row mb-2">
-                                 <div class="d-flex justify-content-center">
-                                    <div class="form-check mb-3 mb-md-0">
-                                       <input id="rememberMe3" type="checkbox" class="form-check-input">
-                                       <label for="rememberMe3" class="form-check-label">Remember me</label>
-                                    </div>
-                                 </div>
+                           </div>
+                           <div class="mb-3 row">
+                              <label for="surnameInput" class="col-sm-2 col-form-label">Surname</label>
+                              <div class="col-sm-10">
+                                 <input type="text" id="surnameInput" class="form-control">
                               </div>
-                              <!-- Login button -->
-                              <div class="d-grid gap-2">
-                                 <button type="submit" class="btn btn-primary" aria-label="Login" disabled>Login</button>
-                              </div>
+                           </div>
+                           <div class="mb-3 offset-md-2">
+                              <input class="form-check-input" type="checkbox" value="" id="activeCheck">
+                              <label for="activeCheck" class="form-check-label">
+                                 Active
+                              </label>
+                           </div>
+                           <!-- Save button -->
+                           <div class="d-grid gap-2">
+                              <button type="submit" class="btn btn-primary" aria-label="Login" disabled>Save</button>
                            </div>
                         </form>
                      </div>
