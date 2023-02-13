@@ -82,9 +82,15 @@
                                  Active
                               </label>
                            </div>
-                           <!-- Save button -->
-                           <div class="d-grid gap-2">
-                              <button type="submit" class="btn btn-primary" aria-label="Login">Save</button>
+                           <div class="row">
+                              <!-- Save button -->
+                              <div class="col-sm-2 d-grid gap-2">
+                                 <button type="submit" class="btn btn-primary" aria-label="Save">Save</button>
+                              </div>
+                              <!-- Cancel button -->
+                              <div class="col-sm-2 d-grid gap-2">
+                                 <button type="submit" class="btn btn-primary" aria-label="Cancel">Cancel</button>
+                              </div>
                            </div>
                         </form>
                      </div>
@@ -100,28 +106,34 @@
                            <div class="mb-3 row">
                               <label for="nameInput" class="col-sm-2 col-form-label">Name</label>
                               <div class="col-sm-10">
-                                 <input type="text" id="nameInput2" class="form-control" value="John" disabled>
+                                 <input type="text" id="nameInput2" class="form-control" value="John" disabled aria-disabled="true">
                               </div>
                            </div>
                            <div class="mb-3 row">
                               <label for="surnameInput" class="col-sm-2 col-form-label">Surname</label>
                               <div class="col-sm-10">
-                                 <input type="text" id="surnameInput2" class="form-control" value="Smith" disabled>
+                                 <input type="text" id="surnameInput2" class="form-control" value="Smith" disabled aria-disabled="true">
                               </div>
                            </div>
                            <div class="mb-3 offset-md-2">
-                              <input class="form-check-input" type="checkbox" value="" id="activeCheck2" disabled>
+                              <input class="form-check-input" type="checkbox" value="" id="activeCheck2" disabled aria-disabled="true">
                               <label for="activeCheck" class="form-check-label">
                                  Active
                               </label>
                            </div>
-                           <!-- Save button -->
-                           <div class="d-grid gap-2">
-                              <button type="submit" class="btn btn-primary" aria-label="Login" disabled>
-                                 <span class="spinner-border spinner-border-sm" role="status">
-                                    <span class="visually-hidden">Saving...</span>
-                                 </span>
-                              </button>
+                           <div class="row">
+                              <!-- Save button -->
+                              <div class="col-sm-2 d-grid gap-2">
+                                 <button type="submit" class="btn btn-primary" aria-label="Save" disabled aria-disabled="true">
+                                    <span class="spinner-border spinner-border-sm" role="status">
+                                       <span class="visually-hidden">Saving...</span>
+                                    </span>
+                                 </button>
+                              </div>
+                              <!-- Cancel button -->
+                              <div class="col-sm-2 d-grid gap-2">
+                                 <button type="submit" class="btn btn-primary" aria-label="Cancel" disabled aria-disabled="true">Cancel</button>
+                              </div>
                            </div>
                         </form>
                      </div>
@@ -155,9 +167,15 @@
                                  Active
                               </label>
                            </div>
-                           <!-- Save button -->
-                           <div class="d-grid gap-2">
-                              <button type="submit" class="btn btn-primary" aria-label="Login" disabled>Save</button>
+                           <div class="row">
+                              <!-- Save button -->
+                              <div class="col-sm-2 d-grid gap-2">
+                                 <button type="submit" class="btn btn-primary" aria-label="Save" disabled aria-disabled="true">Save</button>
+                              </div>
+                              <!-- Cancel button -->
+                              <div class="col-sm-2 d-grid gap-2">
+                                 <button type="submit" class="btn btn-primary" aria-label="Cancel" disabled aria-disabled="true">Cancel</button>
+                              </div>
                            </div>
                         </form>
                      </div>
