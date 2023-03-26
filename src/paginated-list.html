@@ -69,12 +69,12 @@
                         <thead>
                            <tr>
                               <th scope="col">
-                                 <button type="button" class="btn btn-default" aria-label="Sort name">
+                                 <button type="button" class="btn btn-link link-dark" aria-label="Sort name">
                                     <i class="fa-solid fa-sort"></i>
                                  </button>Name
                               </th>
                               <th scope="col">
-                                 <button type="button" class="btn btn-default" aria-label="Sort surname">
+                                 <button type="button" class="btn btn-link link-dark" aria-label="Sort surname">
                                     <i class="fa-solid fa-sort"></i>
                                  </button>Surname
                               </th>
@@ -86,10 +86,10 @@
                               <td>Person 1</td>
                               <td>Surname 1</td>
                               <td>
-                                 <button type="button" class="btn btn-default" aria-label="Edit">
+                                 <button type="button" class="btn btn-link link-dark" aria-label="Edit">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                  </button>
-                                 <button type="button" class="btn btn-default" aria-label="Delete" >
+                                 <button type="button" class="btn btn-link link-dark" aria-label="Delete" >
                                     <i class="fa-solid fa-trash-can"></i>
                                  </button>
                               </td>
@@ -98,10 +98,10 @@
                               <td>Person 2</td>
                               <td>Surname 2</td>
                               <td>
-                                 <button type="button" class="btn btn-default" aria-label="Edit">
+                                 <button type="button" class="btn btn-link link-dark" aria-label="Edit">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                  </button>
-                                 <button type="button" class="btn btn-default" aria-label="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                 <button type="button" class="btn btn-link link-dark" aria-label="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
                                     <i class="fa-solid fa-trash-can"></i>
                                  </button>
                               </td>
@@ -110,10 +110,10 @@
                               <td>Person 3</td>
                               <td>Surname 3</td>
                               <td>
-                                 <button type="button" class="btn btn-default" aria-label="Edit">
+                                 <button type="button" class="btn btn-link link-dark" aria-label="Edit">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                  </button>
-                                 <button type="button" class="btn btn-default" aria-label="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                 <button type="button" class="btn btn-link link-dark" aria-label="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
                                     <i class="fa-solid fa-trash-can"></i>
                                  </button>
                               </td>
@@ -122,10 +122,10 @@
                               <td>Person 4</td>
                               <td>Surname 4</td>
                               <td>
-                                 <button type="button" class="btn btn-default" aria-label="Edit">
+                                 <button type="button" class="btn btn-link link-dark" aria-label="Edit">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                  </button>
-                                 <button type="button" class="btn btn-default" aria-label="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                 <button type="button" class="btn btn-link link-dark" aria-label="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
                                     <i class="fa-solid fa-trash-can"></i>
                                  </button>
                               </td>
@@ -134,17 +134,17 @@
                               <td>Person 5</td>
                               <td>Surname 5</td>
                               <td>
-                                 <button type="button" class="btn btn-default" aria-label="Edit">
+                                 <button type="button" class="btn btn-link link-dark" aria-label="Edit">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                  </button>
-                                 <button type="button" class="btn btn-default" aria-label="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                 <button type="button" class="btn btn-link link-dark" aria-label="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
                                     <i class="fa-solid fa-trash-can"></i>
                                  </button>
                               </td>
                            </tr>
                         </tbody>
                      </table>
-                     <div class="col-md-4 offset-md-4">
+                     <div class="d-flex justify-content-center mt-1">
                         <nav aria-label="Page navigation">
                            <ul class="pagination pagination-sm">
                               <li class="page-item disabled" aria-disabled="true">
@@ -274,7 +274,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     <div class="col-md-4 offset-md-4">
+                     <div class="d-flex justify-content-center mt-1">
                         <nav aria-label="Page navigation">
                            <ul class="pagination pagination-sm">
                               <li class="page-item disabled" aria-disabled="true">
@@ -287,18 +287,20 @@
                                     <i class="fa-solid fa-chevron-left"></i>
                                  </button>
                               </li>
-                              <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-                              <li class="page-item"><a class="page-link" href="#">2</a></li>
-                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item disabled" aria-disabled="true" aria-current="page"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item disabled" aria-disabled="true"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item disabled" aria-disabled="true"><a class="page-link" href="#">3</a></li>
                               <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
                               <li class="page-item disabled" aria-disabled="true"><a class="page-link" href="#">9</a></li>
                               <li class="page-item disabled" aria-disabled="true"><a class="page-link" href="#">10</a></li>
                               <li class="page-item disabled" aria-disabled="true">
                                  <button type="button" class="page-link" aria-label="Next page">
-                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <span class="spinner-border spinner-border-sm" role="status">
+                                       <span class="visually-hidden">Waiting...</span>
+                                    </span>
                                  </button>
                               </li>
-                              <li class="page-item">
+                              <li class="page-item disabled" aria-disabled="true">
                                  <button type="button" class="page-link" aria-label="Last page">
                                     <i class="fa-solid fa-angles-right"></i>
                                  </button>
