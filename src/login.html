@@ -31,9 +31,8 @@
       <meta name="twitter:description" content="Check the Bootstrap Components Template">
 
       <!-- CSS -->
-      <link rel="stylesheet" href="./static/lib/bootswatch/litera/bootstrap.min.css">
+      <link rel="stylesheet" href="./static/lib/bootswatch/materia/bootstrap.min.css">
       <link rel="stylesheet" href="./static/lib/font-awesome/fontawesome-free/css/all.min.css">
-      <link rel="stylesheet" href="./static/lib/highlight/styles/default.css">
       <!-- Docs Template style -->
       <link rel="stylesheet" href="static/css/style.css">
 
@@ -41,14 +40,14 @@
 
    <body class="d-flex flex-column">
       <header>
-         <nav id="navbar-main" class="navbar navbar-expand-md navbar-light bg-light">
+         <nav id="navbar-main" class="navbar navbar-expand-md navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
             <div class="container-fluid">
                <a class="navbar-brand" href="./index.html">Bootstrap Components Template</a>
                <small class="navbar-text d-none d-md-block"><span id="navbar-version">v1.0.0</span> (<time
                      id="navbar-date">2023-02-02</time>)</small>
-               <div class="col-sm d-none d-md-block">
-                  <a href="https://github.com/Bernardo-MG/component-bootstrap-template" title="GitHub"
-                     aria-label="GitHub"><span class="fab fa-github ps-1" aria-hidden="true"></span><span
+               <div id="navbar-icons" class="col-sm d-none d-md-block">
+                  <a href="https://github.com/Bernardo-MG/component-bootstrap-template" class="link-secondary ps-2"
+                     title="GitHub" aria-label="GitHub"><span class="fa-brands fa-github" aria-hidden="true"></span><span
                         class="d-none d-sm-block d-md-none">
                         Github</span></a>
                </div>
@@ -57,7 +56,9 @@
       </header>
       <main>
          <section id="main-section" class="container flex-grow-1 mb-2">
-            <h1>Login Form</h1>
+            <header class="pb-2 mt-4 mb-2 border-bottom">
+               <h1>Login Form</h1>
+            </header>
             <section id="login-default" class="mt-5">
                <h2>Default</h2>
                <div class="col-md-4 offset-md-4">
@@ -96,24 +97,24 @@
                         <form class="needs-validation" novalidate>
                            <div class="mb-2">
                               <input placeholder="Username" value="admin" type="text" id="usernameInput2" class="form-control"
-                                 disabled>
+                                 disabled aria-disabled="true">
                            </div>
                            <div class="mb-2">
                               <input placeholder="Password" value="1234" type="password" id="passwordInput2"
-                                 class="form-control" disabled>
+                                 class="form-control" disabled aria-disabled="true">
                            </div>
                            <!-- Remember me check -->
                            <div class="row mb-2">
                               <div class="d-flex justify-content-center">
                                  <div class="form-check mb-3 mb-md-0">
-                                    <input id="rememberMe2" type="checkbox" class="form-check-input" disabled>
+                                    <input id="rememberMe2" type="checkbox" class="form-check-input" disabled aria-disabled="true">
                                     <label for="rememberMe2" class="form-check-label">Remember me</label>
                                  </div>
                               </div>
                            </div>
                            <!-- Login button -->
                            <div class="d-grid gap-2">
-                              <button type="submit" class="btn btn-primary" aria-label="Login" disabled>
+                              <button type="submit" class="btn btn-primary" aria-label="Login" disabled aria-disabled="true">
                                  <span class="spinner-border spinner-border-sm" role="status">
                                     <span class="visually-hidden">Sending...</span>
                                  </span>
@@ -130,16 +131,14 @@
                   <div class="card">
                      <div class="card-body">
                         <form class="needs-validation" novalidate>
+                           <p class="text-danger text-center">Login failed</p>
                            <div class="mb-2">
                               <input placeholder="Username" value="admin" type="text" id="usernameInput3"
                                  class="form-control">
                            </div>
                            <div class="mb-2">
                               <input placeholder="Password" value="1234" type="password" id="passwordInput3"
-                                 class="form-control is-invalid">
-                              <div class="invalid-feedback text-center">
-                                 Invalid password
-                              </div>
+                                 class="form-control">
                            </div>
                            <!-- Remember me check -->
                            <div class="row mb-2">
@@ -152,7 +151,7 @@
                            </div>
                            <!-- Login button -->
                            <div class="d-grid gap-2">
-                              <button type="submit" class="btn btn-primary" aria-label="Login" disabled>Login</button>
+                              <button type="submit" class="btn btn-primary" aria-label="Login">Login</button>
                            </div>
                         </form>
                      </div>
@@ -161,35 +160,6 @@
             </section>
          </section>
       </main>
-      <footer class="footer w-100 pt-2 border-top bg-light">
-         <div id="footer-nav" class="bg-light container">
-            <div id="navbar-footer" class="row">
-               <div class="col">
-                  <dl class="text-center mb-1">
-                     <dt class="border-bottom">Code</dt>
-                     <dd><a id="scm-link" href="https://github.com/Bernardo-MG/component-bootstrap-template"
-                           class="link-noted">SCM <span class="note">GitHub</span></a>
-                     </dd>
-                     <dd><a id="ci-link" href="https://github.com/Bernardo-MG/component-bootstrap-template/actions"
-                           class="link-noted">CI <span class="note">Github Workflow</span></a>
-                     </dd>
-                     <dd><a id="issues-link" href="https://github.com/Bernardo-MG/component-bootstrap-template/issues"
-                           class="link-noted">Issues <span class="note">GitHub</span></a>
-                     </dd>
-                  </dl>
-               </div>
-            </div>
-         </div>
-         <div id="footer-info" class="bg-light ps-2 pb-1 w-100">
-            <div><span class="far fa-copyright"></span>2015-2022 <a id="author-link"
-                  href="https://github.com/Bernardo-MG">Bernardo
-                  Martínez Garrido</a> - <a id="license-link" href="http://www.opensource.org/licenses/mit-license.php">MIT
-                  License</a>
-            </div>
-            <div>Powered by <a href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a> and <a
-                  href="http://getbootstrap.com/">Bootstrap</a></div>
-         </div>
-      </footer>
       <script src="./static/lib/popperjs/popper.min.js"></script>
       <script src="./static/lib/bootstrap/js/bootstrap.min.js"></script>
    </body>
