@@ -55,26 +55,28 @@
          </nav>
       </header>
       <main>
-         <section id="main-section" class="container flex-grow-1 mb-2">
-            <header class="pb-2 mt-4 mb-2 border-bottom">
-               <h1>Login Form</h1>
+         <section id="main-section" class="container flex-grow-1 py-2">
+            <header>
+               <h1 class="border-bottom">Login Form</h1>
             </header>
-            <section id="login-default" class="mt-5">
+            <section id="login-default">
                <h2>Default</h2>
                <div class="col-md-4 offset-md-4">
                   <div class="card">
                      <div class="card-body">
                         <form class="needs-validation" novalidate>
+                           <!-- Username -->
                            <div class="mb-2">
                               <input placeholder="Username" type="text" id="usernameInput" class="form-control">
                            </div>
+                           <!-- Password -->
                            <div class="mb-2">
                               <input placeholder="Password" type="password" id="passwordInput" class="form-control">
                            </div>
                            <!-- Remember me check -->
                            <div class="row mb-2">
                               <div class="d-flex justify-content-center">
-                                 <div class="form-check mb-3 mb-md-0">
+                                 <div class="form-check form-switch mb-3 mb-md-0">
                                     <input id="rememberMe" type="checkbox" class="form-check-input">
                                     <label for="rememberMe" class="form-check-label">Remember me</label>
                                  </div>
@@ -89,16 +91,20 @@
                   </div>
                </div>
             </section>
-            <section id="login-sending" class="mt-5">
-               <h2>Sending</h2>
+            <section id="login-sending">
+               <header>
+                  <h2>Sending</h2>
+               </header>
                <div class="col-md-4 offset-md-4">
                   <div class="card">
                      <div class="card-body">
                         <form class="needs-validation" novalidate>
+                           <!-- Username -->
                            <div class="mb-2">
                               <input placeholder="Username" value="admin" type="text" id="usernameInput2" class="form-control"
                                  disabled aria-disabled="true">
                            </div>
+                           <!-- Password -->
                            <div class="mb-2">
                               <input placeholder="Password" value="1234" type="password" id="passwordInput2"
                                  class="form-control" disabled aria-disabled="true">
@@ -106,8 +112,9 @@
                            <!-- Remember me check -->
                            <div class="row mb-2">
                               <div class="d-flex justify-content-center">
-                                 <div class="form-check mb-3 mb-md-0">
-                                    <input id="rememberMe2" type="checkbox" class="form-check-input" disabled aria-disabled="true">
+                                 <div class="form-check form-switch mb-3 mb-md-0">
+                                    <input id="rememberMe2" type="checkbox" class="form-check-input" disabled
+                                       aria-disabled="true">
                                     <label for="rememberMe2" class="form-check-label">Remember me</label>
                                  </div>
                               </div>
@@ -125,17 +132,21 @@
                   </div>
                </div>
             </section>
-            <section id="login-failure" class="mt-5">
-               <h2>Failure</h2>
+            <section id="login-failure">
+               <header>
+                  <h2>Failure</h2>
+               </header>
                <div class="col-md-4 offset-md-4">
                   <div class="card">
                      <div class="card-body">
                         <form class="needs-validation" novalidate>
                            <p class="text-danger text-center">Login failed</p>
+                           <!-- Username -->
                            <div class="mb-2">
                               <input placeholder="Username" value="admin" type="text" id="usernameInput3"
                                  class="form-control">
                            </div>
+                           <!-- Password -->
                            <div class="mb-2">
                               <input placeholder="Password" value="1234" type="password" id="passwordInput3"
                                  class="form-control">
@@ -143,7 +154,7 @@
                            <!-- Remember me check -->
                            <div class="row mb-2">
                               <div class="d-flex justify-content-center">
-                                 <div class="form-check mb-3 mb-md-0">
+                                 <div class="form-check form-switch mb-3 mb-md-0">
                                     <input id="rememberMe3" type="checkbox" class="form-check-input">
                                     <label for="rememberMe3" class="form-check-label">Remember me</label>
                                  </div>
